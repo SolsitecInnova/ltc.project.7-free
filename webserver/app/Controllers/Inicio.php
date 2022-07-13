@@ -9,9 +9,6 @@ class Inicio extends BaseController
 	}
     public function index()
     {
-        if(isMobile())
-			return view('mobile/inicio');
-        else
-        	return view('web/inicio');
+		return view('mobile/ListaDeContactos');
     }
 }
